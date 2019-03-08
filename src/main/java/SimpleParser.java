@@ -15,8 +15,7 @@ class SimpleParser {
     boolean visit(Node content) {
         SimpleVisitor sv = new SimpleVisitor();
         sv.visitPreOrder(content);
-        System.out.println(sv.hasHelloWorld);
-        return true;
+        return sv.hasHelloWorld;
     }
 
     String getGreeting() {
